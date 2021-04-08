@@ -12,6 +12,7 @@
   "dependencies": {
     "ejs-mate": "^3.0.0",
     "express": "^4.17.1",
+    "leaflet": "^1.7.1",
     "socket.io": "^4.0.1"
   },
   "devDependencies": {
