@@ -19,7 +19,7 @@
 
         <!-- Custom styles for this template-->
         <link href="css/sb-admin-2.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/leafet.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />        
         
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -35,7 +35,7 @@
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 <!-- Sidebar - Brand -->
-                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="visualizador.ejs">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
                     <div class="sidebar-brand-icon rotate-n-15">
                         <i class="fas fa-laugh-wink"></i>
                     </div>
@@ -46,8 +46,8 @@
                 <hr class="sidebar-divider my-0">
 
                 <!-- Nav Item - Dashboard -->
-                <li class="nav-item active" onclick="Municc()">
-                    <a class="nav-link" href="#">
+                <li class="nav-item active" onclick="municc()">
+                    <a class="nav-link" href="">
                         <i class="fas fa-fw fa-globe-americas"></i>
                         <span>Municipalidad</span></a>
                 </li>
@@ -156,23 +156,13 @@
                 <div id="content">
 
                     <div id = 'map-template'>
-                        <script>
-                            var map = L.map('map-template').
-                                setView([-31.021380845522756, -64.06144005927875],
-                                15);
-            
-                                L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">Castillo Jonathan</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-                                maxZoom: 18
-                                }).addTo(map);
-                        </script>                   
                         
                     </div>
 
                 </div>
                 <!-- End of Main Content -->
 
-                <!-- Footer -->
+                <!-- Footer >
                 <footer class="sticky-footer bg-white">
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
@@ -180,7 +170,7 @@
                         </div>
                     </div>
                 </footer>
-                <!-- End of Footer -->
+                < End of Footer -->
 
             </div>
             <!-- End of Content Wrapper -->
@@ -229,6 +219,8 @@
         <!-- Page level custom scripts -->
         <script src="js/demo/chart-area-demo.js"></script>
         <script src="js/demo/chart-pie-demo.js"></script>
+
+        <script src="js/main.js"></script>
 
     </body>
 
