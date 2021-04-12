@@ -1,3 +1,5 @@
+//Initialize
+
 var map = L.map('map-template').setView([-31.055328, -64.060105], 12);
         
 L.tileLayer('https://tiles.wmflabs.org/osm-no-labels/{z}/{x}/{y}.png', {
