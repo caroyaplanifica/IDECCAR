@@ -49,9 +49,21 @@
 
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a id="municc" class="nav-link" href="">
+                    <a class="nav-link" href="" onclick="municc()">
                         <i class="fas fa-fw fa-archway"></i>
-                        <span>Municipalidad de <br>Colonia Caroya</span>                        
+                        <span>Municipalidad de <br>Colonia Caroya</span>  
+                        <script>
+                            function municc(){
+                                var map = L.map('map-template').setView([-31.055328, -64.060105], 12);
+            
+                                L.tileLayer('https://c.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">Castillo Jonathan</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+                                    maxZoom: 18
+                                }).addTo(map);
+
+                                return map();
+                            }
+                        </script>                      
                     </a> 
                 </li>
 
@@ -158,9 +170,7 @@
                 <!-- Main Content -->
                 <div id="content">
 
-                    <div id = 'map-template' >
-                        
-                    </div>
+                    <div id = 'map-template'></div>
 
                 </div>
                 <!-- End of Main Content -->
