@@ -158,27 +158,7 @@
                 <div id="content">
 
                     <div id = 'map-template'></div>
-                    <script type="text/javascript">
-                        const map = new L.Map('map-template', { center: new L.LatLng(-31.055328, -64.060105), zoom: 12 });
-                        const osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-                                        
-                        map.addLayer(osm);
-                                        
-                        // Load kml file
-                        fetch('ejidomunicc.kml')
-                            .then(res => res.text())
-                            .then(kmltext => {
-                                // Create new kml overlay
-                                const parser = new DOMParser();
-                                const kml = parser.parseFromString(kmltext, 'text/xml');
-                                const track = new L.KML(kml);
-                                map.addLayer(track);
-                                        
-                                // Adjust map to show the kml
-                                const bounds = track.getBounds();
-                                map.fitBounds(bounds)
-                                });
-                    </script>
+                    
 
                 </div>
                 <!-- End of Main Content -->
@@ -242,7 +222,7 @@
         <script src="js/demo/chart-pie-demo.js"></script>
 
         <!--script src="js/main.js"></script-->
-        <script src="js/L.kml.js"></script>
+        <script src="js/main.js"></script>
 
     </body>
 
