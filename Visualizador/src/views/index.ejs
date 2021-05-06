@@ -56,10 +56,19 @@
 
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href="" onclick="municc()">
                         <i class="fas fa-fw fa-archway"></i>
                         <span>Municipalidad de <br>Colonia Caroya</span>                                      
                     </a> 
+                    <script>
+                        function map(f, a) {
+                            let result = []; // Crea un nuevo arreglo
+                            let i; // Declara una variable
+                            for (i = 0; i != a.length; i++)
+                                result[i] = f(a[i]);
+                            return result;
+                        }
+                    </script>
                 </li>
 
                 <!-- Divider -->
